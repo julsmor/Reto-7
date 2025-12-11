@@ -4,7 +4,9 @@ Add the proper data structure to manage multiple orders (maybe a FIFO queue)
 Define a named tuple somewhere in the menu, e.g. to define a set of items.
 Create an interface in the order class, to create a new menu, aggregate the functions for add, update, delete items. All the menus should be stored as JSON files. (use dicts for this task.)
 
+
 **Descripción del ejercicio**
+
 Este código implementa un sistema completo para la gestión de un restaurante. Define diferentes tipos de productos del menú —bebidas, entradas y platos fuertes— mediante clases con atributos específicos y métodos para calcular precios, incluyendo ajustes como descuentos o variaciones por tamaño. También incluye un `MenuManager`, encargado de agregar, modificar, eliminar y almacenar los ítems del menú en archivos JSON, permitiendo guardar y cargar la información de manera persistente. Además, incorpora la clase `Order`, que representa un pedido conformado por múltiples ítems y permite calcular su costo total aplicando descuentos según ciertas reglas. Finalmente, el sistema maneja múltiples pedidos mediante una estructura FIFO (`OrderQueue`) basada en una cola, asegurando que los pedidos se procesen en el orden en que fueron recibidos.
 ```python
 import json
